@@ -11,7 +11,7 @@ services:
         image: cowpanda/aspnetcore-app:2.0
         container_name: aspnetcore.app.test
         working_dir: /app
-        networks: bridge
+        network_mode: bridge
         volumes:
             - {your_publish_release_path}:/app
         environment:
