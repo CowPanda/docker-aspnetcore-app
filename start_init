@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -z "$APP" ]; then
+    export APP=$(pwd | xargs basename).dll
+    fi
+cd /app
+
+dotnet $APP
